@@ -10,6 +10,7 @@ import { Status } from "./components/Status";
 import { User } from "./components/User";
 import { UserContextProvider } from "./components/UserContext";
 import { Form } from './components/Form';
+import { MutableRef } from "./components/MutableRef";
 function App() {
   const person = {
     first: "Oliyide",
@@ -57,6 +58,7 @@ function App() {
         <User />
         <Form/>
         <Counter />
+        <MutableRef/>
       </div>
     </UserContextProvider>
   );
