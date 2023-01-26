@@ -3,10 +3,6 @@ type studentType = {
   class: string;
   subject: string;
 };
-type StudentType = {
-  student: studentType;
-  setStudent: React.Dispatch<React.SetStateAction<studentType>>;
-};
 export const Form = () => {
   const [student, setStudent] = useState<studentType>({class:"",subject:""});
   const handleSetStudent = (e: React.ChangeEvent<HTMLInputElement>) => {

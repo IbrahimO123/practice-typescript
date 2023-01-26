@@ -13,11 +13,11 @@ type ActionReset = {
   type: "reset";
 };
 
-type ActionChangeName = {
-  type: "changeName";
-  field: string;
-  payload: string;
-};
+// type ActionChangeName = {
+//   type: "changeName";
+//   field: string;
+//   payload: string;
+// };
 
 type CounterAction = ActionPayload | ActionReset;
 
