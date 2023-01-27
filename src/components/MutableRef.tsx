@@ -12,7 +12,7 @@ export const MutableRef = () => {
     }, 1000);
   };
   useEffect(() => {
-    // starTimer();
+     starTimer();
     return () => stopTimer();
   }, [timer]);
   return (
