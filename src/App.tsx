@@ -9,8 +9,11 @@ import { PersonLists } from "./components/state/PersonLists";
 import { Status } from "./components/state/Status";
 import { User } from "./components/state/User";
 import { UserContextProvider } from "./components/state/UserContext";
-import { Form } from './components/state/Form';
+import { Form } from "./components/state/Form";
 import { MutableRef } from "./components/state/MutableRef";
+import { Lists } from "./components/generic/Lists";
+import { Restrict } from "./components/restriction/Restrict";
+import { Toasts } from './components/toast/Toasts';
 function App() {
   const person = {
     first: "Oliyide",
@@ -56,9 +59,29 @@ function App() {
           handleClick={(e) => console.log("Button Clicked", e)}
         />
         <User />
-        <Form/>
+        <Form />
         <Counter />
-        <MutableRef/>
+        <MutableRef />
+        {/* <Lists
+          items={["Owolabi", "Kazeem", "Wasiu", "Kemi"]}
+          onClick={(item) => console.log(item)}
+        />
+        <Lists
+          items={[23, 45, 78, 12, 46, 98, 24]}
+          onClick={(item) => console.log(item)}
+        /> */}
+        <Lists
+          items={[
+            { name: "Owolabi", age: 23 },
+            { name: "Kazeem", age: 45 },
+            { name: "Wasiu", age: 78 },
+            { name: "Kemi", age: 12 },
+            { name: "Oluwaseun", age: 46 },
+          ]}
+          onClick={(item) => console.log(item)}
+        />
+        <Restrict value={12} isPositive />
+        <Toasts position="center" />
       </div>
     </UserContextProvider>
   );
