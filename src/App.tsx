@@ -1,16 +1,16 @@
-import { Button } from "./components/Button";
-import { Counter } from "./components/Counter";
-import { Greet } from "./components/Greet";
-import { Heading } from "./components/Heading";
-import { Input } from "./components/Input";
-import { Oscar } from "./components/Oscar";
-import { Person } from "./components/Person";
-import { PersonLists } from "./components/PersonLists";
-import { Status } from "./components/Status";
-import { User } from "./components/User";
-import { UserContextProvider } from "./components/UserContext";
-import { Form } from './components/Form';
-import { MutableRef } from "./components/MutableRef";
+import { Button } from "./components/state/Button";
+import { Counter } from "./components/state/Counter";
+import { Greet } from "./components/state/Greet";
+import { Heading } from "./components/state/Heading";
+import { Input } from "./components/state/Input";
+import { Oscar } from "./components/state/Oscar";
+import { Person } from "./components/state/Person";
+import { PersonLists } from "./components/state/PersonLists";
+import { Status } from "./components/state/Status";
+import { User } from "./components/state/User";
+import { UserContextProvider } from "./components/state/UserContext";
+import { Form } from './components/state/Form';
+import { MutableRef } from "./components/state/MutableRef";
 function App() {
   const person = {
     first: "Oliyide",
