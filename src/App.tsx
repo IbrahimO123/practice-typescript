@@ -13,7 +13,10 @@ import { Form } from "./components/state/Form";
 import { MutableRef } from "./components/state/MutableRef";
 import { Lists } from "./components/generic/Lists";
 import { Restrict } from "./components/restriction/Restrict";
-import { Toasts } from './components/toast/Toasts';
+import { Toasts } from "./components/toast/Toasts";
+import { Buttons } from "./components/html/Buttons";
+import { Text } from "./components/polymorphic/Text";
+
 function App() {
   const person = {
     first: "Oliyide",
@@ -82,6 +85,14 @@ function App() {
         />
         <Restrict value={12} isPositive />
         <Toasts position="center" />
+        <Buttons onClick={() => console.log("clicked")} variant="primary">
+          Send
+        </Buttons>
+        <Text as="h2" size="md">Welcome to the world</Text>
+        <Text as="p" color="secondary">How are you doing today</Text>
+        <Text as="label" htmlFor="someId" color="primary" size="md">
+          Extend my greetings to your family
+        </Text>
       </div>
     </UserContextProvider>
   );

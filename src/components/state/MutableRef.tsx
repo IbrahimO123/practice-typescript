@@ -51,14 +51,14 @@ export const MutableRef = () => {
 
   return (
     <div>
-      Hook Timer {timer}
+      <h4>Hook Timer {timer}</h4>
       <div id="parent">
-        {timer >= 7 && timer <= 9 ? (
-          <h2>Almost time to Submit</h2>
+        {timer >= 5 && timer <= 9 ? (
+          <h5>Almost time to Submit</h5>
         ) : timer === 10 ? (
-          <h2 id="child" onInvalid={stopTimer}>
+          <h5 id="child" onInvalid={stopTimer}>
             Exam Closed
-          </h2>
+          </h5>
         ) : null}
       </div>
       <p>
